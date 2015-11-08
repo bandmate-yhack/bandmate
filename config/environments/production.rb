@@ -79,5 +79,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Precompile dynamic assets
-  config.assets.precompile = %w(*.js *.scss *.scss.erb)
+  config.assets.precompile = %w(*.js *.css *.jpg *.jpeg *.scss *.scss.erb)
 end

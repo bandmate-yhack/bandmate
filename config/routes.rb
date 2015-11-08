@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
+  get 'user/view'
+
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
   get 'about', to: 'welcome#about'
+  get 'user/view/:user_id', to: 'user#view'
 
   resources :sessions, only: [:create, :destroy]
   resources :welcome, only: [:show]
+  resources :user, only: [:view]
 
   root 'welcome#index'
 

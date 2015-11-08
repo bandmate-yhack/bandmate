@@ -40,5 +40,5 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   # Precompile dynamic assets
-  config.assets.precompile = %w(*.js *.scss *.scss.erb)
+  config.assets.precompile = %w(*.js *.css *.jpg *.jpeg *.scss *.scss.erb)
 end
