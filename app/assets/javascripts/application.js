@@ -127,10 +127,12 @@ function fbPermissions(callback) {
 }
 
 // music and profile picture might actually require /ser-id/ instead of /me/
-function fbMusic(callback) {
+function fbMusic() {
+    console.log("looking for music");
     FB.api('/me/music', function(response) {
         // look in created_time field for the time the user liked the page
-        callback(response);
+        console.log(response);
+        document.getElementById("lee").innerHTML = response;
     });
 }
 
