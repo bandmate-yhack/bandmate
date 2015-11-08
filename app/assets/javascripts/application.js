@@ -166,7 +166,7 @@ function testAPI() {
            console.log('Successful login for: ' + response.name);
            console.log('full data:');
            console.log(response);
-           document.getElementById('status').innerHTML =
+           document.getElementById('lee').innerHTML =
            'Thanks for logging in, ' + response.name + '!';
            });
 }
