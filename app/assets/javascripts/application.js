@@ -19,9 +19,6 @@
 Usage: call function loadFacebookSDK() at the beginning of the body tag in html
 */
 
-//You should insert this directly after the opening <body> tag on each page you want to load the facebook SDK:
-//<script type="text/javascript" src="../js/facebookSetup.js"></script>
-
 // to trigger login, create this button:
 //<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
 
