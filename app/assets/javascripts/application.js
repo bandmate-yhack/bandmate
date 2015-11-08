@@ -36,6 +36,9 @@ Usage: call function loadFacebookSDK() at the beginning of the body tag in html
 // you're allowed to re-ask for declined permissions (might only work once though)
 // unclear what happens if you re-ask for permissions which have been granted.
 
+var userId = "";
+var userName = "";
+
 
 // This is called with the results from from FB.getLoginStatus().
 function statusChangeCallback(response) {
@@ -126,11 +129,12 @@ function fbPermissions(callback) {
     });
 }
 
+// functions that will get called when the SDK is known and userId and userName too
 var execAfterLoadSDK = [];
 var loadedSDK = false;
 
 function fetchMusic() {
-    FB.api('/me/music', function(response) {
+    FB.api('/'+userId+'/music', function(response) {
         // look in created_time field for the time the user liked the page
         console.log("found music");
         console.log(response);
@@ -179,9 +183,11 @@ function testAPI() {
            console.log(response);
            document.getElementById('lee').innerHTML =
            'Thanks for logging in, ' + response.name + '!';
+           userName = response.name;
+           userId = response.id;
+           for (var i = 0; i < execAfterLoadSDK.length; i++) {
+                execAfterLoadSDK[i]();
+            }
+            loadedSDK = true;
            });
-    for (var i = 0; i < execAfterLoadSDK.length; i++) {
-        execAfterLoadSDK[i]();
-    }
-    loadedSDK = true;
 }
