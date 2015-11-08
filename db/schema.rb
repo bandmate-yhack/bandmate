@@ -11,10 +11,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151107194946) do
+ActiveRecord::Schema.define(version: 20151108084326) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "Projects_Users", id: false, force: :cascade do |t|
+    t.integer "project_id", null: false
+    t.integer "user_id",    null: false
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "owner_id"
+  end
+
+  create_table "stems", force: :cascade do |t|
+    t.string   "instrument"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "track_id"
+  end
+
+  add_index "stems", ["track_id"], name: "index_stems_on_track_id", using: :btree
+
+  create_table "tracks", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "project_id"
+  end
+
+  add_index "tracks", ["project_id"], name: "index_tracks_on_project_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "provider"
@@ -27,4 +57,6 @@ ActiveRecord::Schema.define(version: 20151107194946) do
     t.datetime "updated_at",       null: false
   end
 
+  add_foreign_key "stems", "tracks"
+  add_foreign_key "tracks", "projects"
 end

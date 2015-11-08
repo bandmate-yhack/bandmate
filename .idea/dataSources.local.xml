@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails bandmate: production" uuid="b2b3a986-70ff-4f85-a290-02f9926401b1">
+      <first-sync>true</first-sync>
+      <user-name>witaqcydgffvao</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe8dfebdfe4dfeedfe7dfebdffedfefdff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails bandmate: test" uuid="92bcd36e-8f87-4613-868c-6f6e58c79bb7">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails bandmate: development" uuid="d93360f8-b7cf-4ab7-aac3-65e3b65688c0">
+      <user-name>bandmate</user-name>
+      <user-password>dfc8dfcbdfc4dfcedfc7dfcbdfdedfcf</user-password>
+      <schema-pattern>bandmate_development.pg_catalog bandmate_development.public</schema-pattern>
+      <default-schemas>bandmate_development.public</default-schemas>
+    </data-source>
+  </component>
+</project>
