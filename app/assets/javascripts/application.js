@@ -126,15 +126,25 @@ function fbPermissions(callback) {
     });
 }
 
-// music and profile picture might actually require /ser-id/ instead of /me/
-function fbMusic() {
-    console.log("looking for music");
+var execAfterLoadSDK = [];
+var loadedSDK = false;
+
+function fetchMusic() {
     FB.api('/me/music', function(response) {
         // look in created_time field for the time the user liked the page
         console.log("found music");
         console.log(response);
         document.getElementById("lee").innerHTML = response;
     });
+}
+
+// music and profile picture might actually require /ser-id/ instead of /me/
+function fbMusic() {
+    if (loadedSDK) {
+        fetchMusic();
+    } else {
+        execAfterLoadSDK.push(fetchMusic);
+    }
 }
 
 function fbProfilePic(callback) {
@@ -170,4 +180,8 @@ function testAPI() {
            document.getElementById('lee').innerHTML =
            'Thanks for logging in, ' + response.name + '!';
            });
+    for (var i = 0; i < execAfterLoadSDK.length; i++) {
+        execAfterLoadSDK[i]();
+    }
+    loadedSDK = true;
 }
