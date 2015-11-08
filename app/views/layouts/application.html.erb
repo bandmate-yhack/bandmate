@@ -2,22 +2,35 @@
 <html>
 <head>
   <title>Bandmate</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Main Page">
+  <meta name="author" content="YHack Squad">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-<div>
-  <% if current_user %>
-      Signed in as <strong><%= current_user.name %></strong>!
-      <img src="<%= current_user.image %>" alt="Facebook picture">
-      <%= link_to "Sign out", signout_path, id: "sign_out" %>
-  <% else %>
-      <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-  <% end %>
+<body id="<%= params[:action] %>">
+<div class="site-wrapper">
+  <div id="masthead">  <!--if we get a logo -->
+    <ul class="masthead-nav">
+      <li id="brand-nav">Bandmate</li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li>
+        <% if current_user %>
+            <%= link_to "Logout", signout_path, id: "sign_out" %>
+        <% else %>
+            <%= link_to "Login", "/auth/facebook", id: "sign_in" %>
+        <% end %>
+      </li>
+      <% if current_user %>
+          <li style="float: right">Welcome, <%= current_user.name %></li>
+      <% end %>
+    </ul>
+  </div>
+  <%= yield %>
 </div>
-
-<%= yield %>
-
 </body>
 </html>

@@ -1,0 +1,136 @@
+/* thanks http://www.htmlgoodies.com/beyond/css/how-to-create-horizontal-navigation-with-css3.html */
+#masthead {
+  /*margin: 0; */
+  margin-top: -1%;
+  padding: 0;
+  background: #1B2630;
+  color: white;
+}
+
+#masthead ul {
+  list-style-type: none;
+  height: auto;
+  padding: 10px 40px 10px 40px;
+}
+
+#brand-nav {
+  font-size: 250%;
+  color: white;
+}
+
+#masthead li {
+  display: inline;
+  font-size: 150%;
+}
+
+#masthead a {
+  text-decoration: none;
+  color: #D6D840;
+  padding: 10px 40px 10px 40px;
+}
+
+#masthead a:hover {
+  color: white;
+  background-color: #2E4154;
+}
+
+body {
+  margin: 0;
+  font-size: 90%;
+  font-family: 'Montserrat', sans-serif;
+  color: #1B2630;
+  background-size: cover;
+}
+
+.cover {
+  padding-bottom: 10px;
+}
+
+.cover-heading {
+  font-size: 50pt;
+  padding-left: 12%;
+  padding-top: 25%;
+}
+
+#lead1 {
+  color: #FF8E98;
+  font-size: 200%;
+  padding-left: 15%;
+  margin-top: -1.5%;
+}
+
+#lead2 {
+  color: #D16969;
+  font-size: 200%;
+  padding-left: 10%;
+  margin-top: -1.5%;
+}
+
+#lead3 {
+  color: #FF8E98;
+  font-size: 200%;
+  padding-left: 1%;
+  margin-top: -1.5%;
+}
+
+.btn-default {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 175%;
+  background-color: #1B2630;
+  color: #D6D840;
+  /* opacity: .4; */
+  padding: 15px;
+  /*border: 3px solid #D6D840; */
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.btn-default:hover {
+  background-color: rgba(0, 0, 0, .30);
+}
+
+#learn {
+  /*margin-top: 90%; */
+  margin-left: 38%;
+}
+
+#facebooklogin {
+  margin-left: 5px;
+}
+
+a:link {
+  color: #D6D840;
+}
+
+/* visited link */
+a:visited {
+  color: #D6D840;
+}
+
+/* mouse over link */
+a:hover {
+  /*color: #444514; */
+}
+
+/* selected link */
+a:active {
+  color: #D6D840;
+}
+
+#foot {
+  margin-top: 10px;
+  color: #FF7572;
+  text-decoration: none;
+}
+
+#aboutus {
+  margin-top: 22%;
+  margin-left: 11%;
+  margin-right: 27%;
+  padding: 5px 5px 5px 5px;
+}
+
+.mastfoot {
+  text-align: center;
+}
