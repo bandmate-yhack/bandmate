@@ -14,7 +14,7 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-  # TODO: Fix CSS?
+  config.cache_classes = true
   config.serve_static_assets = true
   config.assets.compile = true
   config.assets.digest = true

@@ -42,7 +42,6 @@ group :development, :test do
 end
 
 group :production, :staging do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
