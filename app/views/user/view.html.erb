@@ -1,0 +1,40 @@
+<img src="<%= image_path 'guitarist.jpeg' %>" alt="frets" id="guitar">
+<div class="cover">
+  <h1 class="cover-heading">Your Power.</h1>
+</div>
+<img src="<%= @user.image %>?type=large" alt="User" id="user">
+<div id="content">
+  <h2>You</h2>
+  <span class="highlight">Name:</span> <%= @user.name %><br>
+  <span class="highlight">Location:</span> New Haven, CT<br>
+  <span class="highlight">Instruments:</span> Guitar, Saxophone<br>
+</div>
+
+<!--<div id="friends">-->
+<!--<h2>Your Bandmates</h2>-->
+<!--<span class="highlight">Claire Carroll:</span> Voice, Ukelele, Piano<br>-->
+<!--<span class="highlight">Erika Lynn-Green:</span> Voice<br>-->
+<!--<span class="highlight">Lee Danilek:</span> Trombone<br>-->
+<!--<span class="highlight">Avi Durling:</span> Voice, Ukulele, Drums, Bass<br>-->
+<!--</div>-->
+
+<div id="spotify">
+  <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12132659569%3Aplaylist%3A3ICn3FsXd87m4KF7fLnmRp" width="300" height="300" frameborder="0" allowtransparency="true"></iframe>
+</div>
+
+
+
+<div id="projects">
+  <h2>Your Projects</h2>
+
+  <% @user.projects.each do |project| %>
+      <span class="highlight"><%= project.title %>:</span>
+      <% project.users.each do |u| %>
+          <%= u == @user ? '' : u.name %>
+      <% end %>
+      <br>
+  <% end %>
+  <span class="highlight">Ave Maria:</span> Erika<br>
+  <a href="/project/2" id="me_down"><span class="highlight">Pull Me Down:</span></a> Avi<br>
+  <span class="highlight">Binary Sunset:</span> Lee, Alex<br>
+</div>

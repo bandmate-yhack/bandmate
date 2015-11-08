@@ -1,0 +1,353 @@
+/* thanks http://www.htmlgoodies.com/beyond/css/how-to-create-horizontal-navigation-with-css3.html */
+/* line 3, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#masthead {
+  /*margin: 0; */
+  margin-top: -1%;
+  padding: 0;
+  background: #1B2630;
+  color: white;
+}
+
+/* line 11, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#masthead ul {
+  list-style-type: none;
+  height: auto;
+  padding: 10px 40px 10px 40px;
+}
+
+/* line 17, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#brand-nav {
+  font-size: 250%;
+  color: white;
+}
+
+/* line 22, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#masthead li {
+  display: inline;
+  font-size: 150%;
+}
+
+/* line 27, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#masthead a {
+  text-decoration: none;
+  color: #D6D840;
+  padding: 10px 40px 10px 40px;
+}
+
+/* line 33, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#masthead a:hover {
+  color: white;
+  background-color: #2E4154;
+}
+
+/* line 38, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+body {
+  margin: 0;
+  font-size: 90%;
+  font-family: 'Montserrat', sans-serif;
+  color: #1B2630;
+  background-size: cover;
+}
+
+/* line 46, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+.cover {
+  padding-bottom: 10px;
+}
+
+/* line 50, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+.cover-heading {
+  font-size: 50pt;
+  padding-left: 12%;
+  padding-top: 25%;
+}
+
+/* line 56, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#lead1 {
+  color: #FF8E98;
+  font-size: 200%;
+  padding-left: 15%;
+  margin-top: -1.5%;
+}
+
+/* line 63, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#lead2 {
+  color: #D16969;
+  font-size: 200%;
+  padding-left: 10%;
+  margin-top: -1.5%;
+}
+
+/* line 70, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#lead3 {
+  color: #FF8E98;
+  font-size: 200%;
+  padding-left: 1%;
+  margin-top: -1.5%;
+}
+
+/* line 77, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+.btn-default {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 175%;
+  background-color: #1B2630;
+  color: #D6D840;
+  /* opacity: .4; */
+  padding: 15px;
+  /*border: 3px solid #D6D840; */
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* line 90, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+.btn-default:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 94, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#learn {
+  /*margin-top: 90%; */
+  margin-left: 38%;
+}
+
+/* line 99, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#facebooklogin {
+  margin-left: 5px;
+}
+
+/* line 103, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+a:link {
+  color: #D6D840;
+}
+
+/* visited link */
+/* line 108, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+a:visited {
+  color: #D6D840;
+}
+
+/* mouse over link */
+/* line 113, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+a:hover {
+  /*color: #444514; */
+}
+
+/* selected link */
+/* line 118, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+a:active {
+  color: #D6D840;
+}
+
+/* line 122, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#foot {
+  margin-top: 10px;
+  color: #FF7572;
+  text-decoration: none;
+}
+
+/* line 128, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+#aboutus {
+  margin-top: 22%;
+  margin-left: 11%;
+  margin-right: 27%;
+  padding: 5px 5px 5px 5px;
+}
+
+/* line 135, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/style.scss */
+.mastfoot {
+  text-align: center;
+}
+/* line 1, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+body#view {
+  margin: 0;
+  font-size: 90%;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: #2E4154;
+  background-repeat: no-repeat;
+}
+
+/* line 10, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view {
+  /*#you
+  {
+      font-size: 40px;
+      padding-left: 30%;
+      margin-top: -15%;
+      padding-bottom: 2%;
+  } */
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
+}
+/* line 11, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #masthead {
+  /*margin: 0; */
+  margin-top: -1%;
+  padding: 0;
+  background: #1B2630;
+  color: white;
+}
+/* line 20, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #masthead ul {
+  list-style-type: none;
+  height: auto;
+  padding: 10px 40px 10px 40px;
+}
+/* line 26, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #brand-nav {
+  font-size: 250%;
+  color: white;
+}
+/* line 30, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #masthead li {
+  display: inline;
+  font-size: 150%;
+}
+/* line 35, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #masthead a {
+  text-decoration: none;
+  color: #D6D840;
+  padding: 10px 40px 10px 40px;
+}
+/* line 40, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #masthead a:hover {
+  color: white;
+  background-color: #2E4154;
+}
+/* line 45, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #guitar {
+  margin-top: -1%;
+  width: 100%;
+  height: auto;
+}
+/* line 50, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view .cover {
+  margin-top: -37%;
+  margin-left: 1%;
+  padding-bottom: 10px;
+}
+/* line 55, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view .cover-heading {
+  font-size: 40pt;
+  padding-left: 0.5%;
+}
+/* line 60, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #user {
+  width: 200px;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-radius: 100px;
+}
+/* line 68, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #spotify {
+  margin-left: 73%;
+  margin-top: -27%;
+}
+/* line 73, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #edit {
+  margin-left: 47%;
+  margin-top: 70%;
+}
+/* line 78, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view .btn-default {
+  /*margin: 0 auto; */
+  text-align: center;
+  font-size: 175%;
+  background-color: #1B2630;
+  /* opacity: .4; */
+  padding: 10px;
+  /*border: 3px solid #D6D840; */
+  border-radius: 25px;
+  text-decoration: none;
+}
+/* line 90, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view .btn-default:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 94, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view .highlight {
+  color: #D6D840;
+}
+/* line 106, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view h2 {
+  margin-bottom: -5px;
+  color: #FF7572;
+}
+/* line 111, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #content {
+  font-size: 30px;
+  padding-left: 25%;
+  margin-top: -20%;
+  padding-bottom: 2%;
+}
+/* line 118, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #friends {
+  font-size: 30px;
+  padding-left: 25%;
+  margin-top: -4%;
+  padding-bottom: 2%;
+}
+/* line 124, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #projects {
+  font-size: 30px;
+  padding-left: 25%;
+  margin-top: -1%;
+  padding-bottom: 2%;
+}
+/* line 131, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view a:link {
+  color: #D6D840;
+  text-decoration: none;
+}
+/* line 137, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view a:visited {
+  color: #D6D840;
+}
+/* line 142, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view a:hover {
+  /*color: #444514; */
+}
+/* line 147, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view a:active {
+  color: #D6D840;
+}
+/* line 151, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view #foot {
+  margin-top: 10px;
+  color: #FF7572;
+  text-decoration: none;
+}
+/* line 157, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/user.scss.erb */
+#view .mastfoot {
+  text-align: center;
+}
+/* line 4, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/welcome.scss.erb */
+body#index {
+  background: url(/assets/record-2e78eb6de6a16c3ad416462cd7beeaed782fdcfcd02a887ed79dcf86a3dcc56b.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 9, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/welcome.scss.erb */
+body#about {
+  background: url(/assets/accordian-d318a8e9967c6dd45dde3bf78a396cc02d241d9951276260b08460673ad6bbc9.jpg) no-repeat;
+  background-size: cover;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+

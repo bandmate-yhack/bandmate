@@ -1,0 +1,11 @@
+/* line 4, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/welcome.scss.erb */
+body#index {
+  background: url(/assets/record-2e78eb6de6a16c3ad416462cd7beeaed782fdcfcd02a887ed79dcf86a3dcc56b.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 9, /Users/alexreinking/Development/bandmate/app/assets/stylesheets/welcome.scss.erb */
+body#about {
+  background: url(/assets/accordian-d318a8e9967c6dd45dde3bf78a396cc02d241d9951276260b08460673ad6bbc9.jpg) no-repeat;
+  background-size: cover;
+}
